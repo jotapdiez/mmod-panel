@@ -1,4 +1,6 @@
-Copyright 2011-2015 Massively Modified, Inc. <support@mmogp.com>
+# License
+
+Copyright 2011-2018 Massively Modified, Inc. <support@mmod.co>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

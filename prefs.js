@@ -1,10 +1,10 @@
-/**
- * package: mmod-panel
- * sub-package: preferences
- * author:  Richard B. Winters <a href='mailto:rik@mmogp.com'>rik AT mmogp DOT com</a>
- * copyright: 2011-2015 Massively Modified, Inc.
- * license: Apache, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
- */
+/*-----------------------------------------------------------------------------
+ * @package:    MMOD Panel
+ * @author:     Richard B Winters
+ * @copyright:  2011-2018 Massively Modified, Inc.
+ * @license:    Apache-2.0
+ * @version:    1.1.8
+ *---------------------------------------------------------------------------*/
 
 const gio = imports.gi.Gio;
 const gdk = imports.gi.Gdk;
@@ -24,7 +24,7 @@ const ext = eutils.getCurrentExtension();
 const conv = ext.imports.convenience;
 const lib = ext.imports.lib;
 
-const mver = '1.1.1-7';
+const mver = '1.1.1-8';
 
 const schema = "org.gnome.shell.extensions.mmod-panel";
 
@@ -45,8 +45,6 @@ const ICON_EMAIL = ext.path + '/res/img/generic/email/email-24.png';
 const ICON_GNOME = ext.path + '/res/img/gnico/gnome/gnome-24.png';
 const ICON_GLOOK = ext.path + '/res/img/gnico/gnome/gnome-24.png';
 
-const WIDGET_DEFAULT_WIDTH = 650;
-const WIDGET_DEFAULT_HEIGHT = 525;
 
 /**
  * Init
@@ -473,7 +471,7 @@ preferences.prototype =
             {
                 image: this.linkMMODHomeImage,
                 //label: " .",
-                uri: "http://www.mmogp.com",
+                uri: "http://www.mmod.co",
                 xalign: 0,
                 hexpand: false
             }
@@ -495,7 +493,7 @@ preferences.prototype =
             {
                 image: this.linkMMODPanelRepoImage,
                 label: " MMOD Git Repository",
-                uri: "https://code.mmogp.com/mmod/mmod-panel",
+                uri: "https://gitlab.com/mmod/mmod-panel",
                 xalign: 0,
                 hexpand: false
             }
@@ -527,7 +525,7 @@ preferences.prototype =
             {
                 image: this.linkMMODPanelIssueImage,
                 label: " Report an issue",
-                uri: "https://code.mmogp.com/mmod/mmod-panel/issues",
+                uri: "https://gitlab.com/mmod/mmod-panel/issues",
                 xalign: 0,
                 hexpand: false
             }
@@ -560,7 +558,7 @@ preferences.prototype =
             {
                 image: this.linkMMODGFeedbackImage,
                 label: " Gmail me",
-                uri: "https://mail.google.com/mail/?extsrc=mailto&url=mailto:support@mmogp.com?subject=Feedback/Suggestions%20for%20MMOD%20Panel",
+                uri: "https://mail.google.com/mail/?extsrc=mailto&url=mailto:support@mmod.co?subject=Feedback/Suggestions%20for%20MMOD%20Panel",
                 xalign: 0,
                 hexpand: false
             }
@@ -576,7 +574,7 @@ preferences.prototype =
             {
                 image: this.linkMMODEFeedbackImage,
                 label: " Email me",
-                uri: "mailto:support@mmogp.com?subject=Feedback/Suggestions%20for%20MMOD%20Panel&Body=mmod-panel%20v0.1.0:\n\n",
+                uri: "mailto:support@mmod.co?subject=Feedback/Suggestions%20for%20MMOD%20Panel&Body=mmod-panel%20v1.1.1-8:\n\n",
                 xalign: 0,
                 hexpand: false
             }
@@ -600,8 +598,8 @@ preferences.prototype =
         let labelSpaceAbout = new gtk.Label( { label: "3/3", xalign: 1, hexpand: false } );
         this.gridAbout.attach( labelSpaceAbout, 3, 8, 1, 1 );
 
-        // set min size of prefs widget
-        this.notebook.set_size_request(WIDGET_DEFAULT_WIDTH, WIDGET_DEFAULT_HEIGHT);
+
+
 
         this.notebook.show_all();
         return this.notebook;

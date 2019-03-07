@@ -1,8 +1,10 @@
-# package: mmod-panel
-# author:  Richard B. Winters <a href='mailto:rik@mmogp.com'>Rik At MMOGP</a>
-# copyright: 2011-2014 Massively Modified, Inc.
-# license: Apache, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
-#
+# *-----------------------------------------------------------------------------
+# * @package:    MMOD Panel
+# * @author:     Richard B Winters
+# * @copyright:  2011-2018 Massively Modified, Inc.
+# * @license:    Apache-2.0
+# * @version:    1.1.8
+# *---------------------------------------------------------------------------*/
 msgid ""
 msgstr ""
 "Project-Id-Version: MMOD Panel Gnome Shell Extension\n"

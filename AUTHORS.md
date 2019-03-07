@@ -1,15 +1,11 @@
-mmod-panel
+# Contributing Authors
 
 Please see the COPYING file for copyright information. More information as well as some brief documentation can be found with the files accompanying this file.
 
+## Upstream
 
-I. AUTHORS
+* Richard B Winters <rik@mmogp.com>
 
-    A. Upstream
+## Contributors
 
-        -- Richard B Winters <rik@mmogp.com>
-
-
-    B. Contributors
-
-        -- Jonatan Zeidler <jonatan_zeidler@gmx.de>
+* Jonatan Zeidler <jonatan_zeidler@gmx.de>
